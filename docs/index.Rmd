@@ -1,0 +1,33 @@
+---
+title: "index"
+author: "Joseph Koroki"
+date: "3/4/2022"
+output: html_document
+---
+
+
+```{r summary}
+source("analysis.R")
+summary(df_for_chart2)
+```
+In 2010 the maximum total incarcerated population was 9,822,433. Of that total population 1,343,491 were black individuals between the ages of 15 to 64. With an average of 8555 black individuals per facility. 1,968,203 of the incarcerated population in 2010 was white people between the ages of 15 to 64. They averaged 42,688 individuals per facility.
+
+## Including charts
+
+Time trend chart for King County Washington and King County Texas. It is clear that the urban King County Washington has a much higher incarcerated population than a more rural King County Texas.
+
+```{r chart1}
+chart1
+```
+
+Variable comparison chart showing the total incarcerated population by state for 2010. California has by far the largest incarcerated population.
+```{r chart2}
+chart2
+```
+
+Map chart showing the total incarcerated population densities from 1970. 
+```{r chart3}
+mapchart1
+```
+
+
